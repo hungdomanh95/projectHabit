@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useRef, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import {TouchableOpacity, StyleSheet, Text, View, Image,Dimensions,TextInput,SafeAreaView,ScrollView} from 'react-native';
 import _ from 'lodash'
@@ -10,15 +10,18 @@ const widthScreen = Dimensions.get('window').width
 const heightScreen = Dimensions.get('window').height
 const widthModal = 0.9
 const CreatHabit = () => {
-useDispatch
+
    const dispatch = useDispatch()
+   const idRef = React.useRef(null);
+   console.log('id: ', idRef);
   const [text, onChangeText] = useState("");
   const [iconChoose,setIconChoose] = useState(undefined)
-  console.log('iconChoose: ', iconChoose);
   const chooseIcon = (item) => {
-    setIconChoose(item)
+    idRef.current = item.id
+    // setIconChoose(item)
     // dispatch(action.addHabit())
   }
+
 
   return (
     <SafeAreaView style={styles.container} >
@@ -36,10 +39,11 @@ useDispatch
             <ScrollView>
                 <View style={{flexDirection:"row",flexWrap:"wrap",justifyContent:"flex-start",paddingVertical:"5%"}}>
                    {arrIconBest.map(item=>{
+                     console.log('id.current: ', idRef.current);
                        return (
-                        <TouchableOpacity key={item.id} onPress={()=>chooseIcon(item)} >
+                        <TouchableOpacity key={item.id} onPress={()=>chooseIcon(item)} ref={idRef} >
                           <Image source={item.imageUrl} style={styles.icon} />
-                          {iconChoose && iconChoose.id === item.id &&
+                          {idRef.current === item.id &&
                             <Image source={require("../../static/images/check.png")} style={styles.iconCheck} />
                           }
                         </TouchableOpacity>
