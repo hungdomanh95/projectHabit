@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import {TouchableOpacity, StyleSheet, Text, View, Image,Dimensions,TextInput,SafeAreaView,ScrollView} from 'react-native';
 import _ from 'lodash'
 import iconEdit from "../../static/images/edit.png"
-import {arrIconBest,arrIconFavorites} from "../ListData"
+import {arrIconBest} from "../ListData"
 import {action} from "../../redux/action/habitAction"
 
 const widthScreen = Dimensions.get('window').width
@@ -39,14 +39,10 @@ useDispatch
                        return (
                         <TouchableOpacity key={item.id} onPress={()=>chooseIcon(item)} >
                           <Image source={item.imageUrl} style={styles.icon} />
+                          {iconChoose && iconChoose.id === item.id &&
+                            <Image source={require("../../static/images/check.png")} style={styles.iconCheck} />
+                          }
                         </TouchableOpacity>
-                       )
-                   })}
-                   {arrIconFavorites.map(item=>{
-                       return(
-                         <TouchableOpacity key={item.id} onPress={()=>chooseIcon(item)} >
-                           <Image source={item.imageUrl} style={styles.icon} />
-                         </TouchableOpacity>
                        )
                    })}
 
@@ -75,5 +71,12 @@ const styles = StyleSheet.create({
     // backgroundColor:"red",
     // marginRight:5,
     // marginVertical:"15%"
+  },
+  iconCheck:{
+    width: widthScreen/25,
+    height:  widthScreen/25,
+    position:"absolute",
+    right:10,
+    bottom:0
   }
 });

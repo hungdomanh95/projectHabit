@@ -123,130 +123,128 @@ export const arrIconBest = [
     id:31,
     imageUrl:require("../static/images/best/watermelon.png")
   },
-]
-export const arrIconFavorites = [
   {
-    id:1,
+    id:32,
     imageUrl:require("../static/images/favorites/badminton-player.png")
   },
   {
-    id:2,
+    id:33,
     imageUrl:require("../static/images/favorites/barbershop.png")
   },
   {
-    id:3,
+    id:34,
     imageUrl:require("../static/images/favorites/beer.png")
   },
   {
-    id:4,
+    id:35,
     imageUrl:require("../static/images/favorites/birthday.png")
   },
   {
-    id:5,
+    id:36,
     imageUrl:require("../static/images/favorites/broom.png")
   },
   {
-    id:6,
+    id:37,
     imageUrl:require("../static/images/favorites/cactus.png")
   },
   {
-    id:7,
+    id:38,
     imageUrl:require("../static/images/favorites/christmas-tree.png")
   },
   {
-    id:8,
+    id:39,
     imageUrl:require("../static/images/favorites/confetti.png")
   },
   {
-    id:9,
+    id:40,
     imageUrl:require("../static/images/favorites/country.png")
   },
   {
-    id:10,
+    id:41,
     imageUrl:require("../static/images/favorites/energy-drink.png")
   },
   {
-    id:11,
+    id:42,
     imageUrl:require("../static/images/favorites/ferris-wheel.png")
   },
   {
-    id:12,
+    id:43,
     imageUrl:require("../static/images/favorites/firework-explosion.png")
   },
   {
-    id:13,
+    id:44,
     imageUrl:require("../static/images/favorites/grocery-bag.png")
   },
   {
-    id:14,
+    id:45,
     imageUrl:require("../static/images/favorites/health-checkup.png")
   },
   {
-    id:15,
+    id:46,
     imageUrl:require("../static/images/favorites/housekeeping.png")
   },
   {
-    id:16,
+    id:47,
     imageUrl:require("../static/images/favorites/man-feeding-chicken.png")
   },
   {
-    id:17,
+    id:48,
     imageUrl:require("../static/images/favorites/map-marker.png")
   },
   {
-    id:18,
+    id:49,
     imageUrl:require("../static/images/favorites/nintendo-switch.png")
   },
   {
-    id:19,
+    id:50,
     imageUrl:require("../static/images/favorites/palm-tree.png")
   },
   {
-    id:20,
+    id:51,
     imageUrl:require("../static/images/favorites/pink-heart.png")
   },
   {
-    id:21,
+    id:52,
     imageUrl:require("../static/images/favorites/popcorn.png")
   },
   {
-    id:22,
+    id:53,
     imageUrl:require("../static/images/favorites/potted-plant.png")
   },
   {
-    id:23,
+    id:54,
     imageUrl:require("../static/images/favorites/reading.png")
   },
   {
-    id:24,
+    id:55,
     imageUrl:require("../static/images/favorites/romance.png")
   },
   {
-    id:25,
+    id:56,
     imageUrl:require("../static/images/favorites/romantic-movies.png")
   },
   {
-    id:26,
+    id:57,
     imageUrl:require("../static/images/favorites/start.png")
   },
   {
-    id:27,
+    id:58,
     imageUrl:require("../static/images/favorites/suitcase.png")
   },
   {
-    id:28,
+    id:59,
     imageUrl:require("../static/images/favorites/traveler.png")
   },
   {
-    id:29,
+    id:60,
     imageUrl:require("../static/images/favorites/vietnamese-coffee.png")
   },
   {
-    id:30,
+    id:61,
     imageUrl:require("../static/images/favorites/working-with-a-laptop.png")
   },
   {
-    id:31,
+    id:62,
     imageUrl:require("../static/images/favorites/wrestling.png")
   },
 ]
